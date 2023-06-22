@@ -41,4 +41,20 @@ const newDepartment = () => {
     });
   };
 
+  //User should have a menu that will branch into different actions
+  const mainMenu = {
+    type: "list",
+    message: "What would you like to do?",
+    choices: [
+      "View Departments",
+      "View Roles",
+      "View Employees",
+      "Add Department",
+      "Add Role",
+      "Add Employee",
+      "Update Role",
+    ],
+    name: "menu",
+  };
+
   
