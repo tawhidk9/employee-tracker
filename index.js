@@ -34,9 +34,9 @@ const newDepartment = () => {
     inquirer.prompt(question).then((answer) => {
         console.log(answer);
       db.query(`INSERT INTO department (name) VALUES (?)`, 
-      answer.deptName,
+      answer.name,
       (err, result)=> {if (err) {console.log(err);}
-          departmentsQuery();
+          deptQ();
         });
     });
   };
@@ -62,7 +62,6 @@ const newDepartment = () => {
 function handleAnswers(answers) {
     const selectedAnswer = answers.name;
   
-    // console.log(selectedAnswer);
     switch (selectedAnswer) {
       case "View Departments":
         deptQ();
@@ -79,4 +78,4 @@ function handleAnswers(answers) {
     }
   }
   
-  inquirer.prompt(mainMenu).then((answers) => handleAnswers(answers));
+  inquirer.prompt(mainMenu).then (handleAnswers(answers));
