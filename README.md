@@ -1,4 +1,4 @@
-# Employee Tracker
+# Employee Tracker WIP THIS APP IS STILL IN DEVELOPMENT
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
